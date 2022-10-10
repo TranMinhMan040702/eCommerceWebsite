@@ -1,0 +1,8 @@
+<decorators defaultdir="/decorators">
+    <!-- Any urls that are excluded will never be decorated by Sitemesh -->
+    <excludes>
+        <pattern>/api*</pattern>
+    </excludes>
+    <!-- apply Sitemesh default template -->
+    
+</decorators>
