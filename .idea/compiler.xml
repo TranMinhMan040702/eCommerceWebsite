@@ -9,5 +9,8 @@
         <module name="eCommerceWebsite" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eCommerceWebsite" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
