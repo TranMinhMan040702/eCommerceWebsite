@@ -1,8 +1,7 @@
 package com.mdk.dao.impl;
 
 import com.mdk.connection.DBConnection;
-import com.mdk.dao.IStyleDAO;
-import com.mdk.models.StyleModel;
+import com.mdk.models.Style;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,15 +13,15 @@ public class StyleDAO extends DBConnection {
         System.out.print(findAll());
     }
 
-    public static List<StyleModel> findAll() {
+    public static List<Style> findAll() {
         String sql = "select * from style";
-        List<StyleModel> styles = new ArrayList<StyleModel>();
+        List<Style> styles = new ArrayList<Style>();
         try {
             Connection getConnection = getConnection();
             PreparedStatement pStatement = getConnection.prepareStatement(sql);
             ResultSet resultSet = pStatement.executeQuery();
             while (resultSet.next()) {
-                StyleModel styleModel = new StyleModel();
+                Style styleModel = new Style();
                 styleModel.setName(resultSet.getString("name"));
                 styleModel.setIdDeleted(resultSet.getString("idDeleted").isEmpty());
                 styles.add(styleModel);
