@@ -1,3 +1,4 @@
+
 package com.mdk.dao.impl;
 
 import com.mdk.connection.DBConnection;
@@ -93,4 +94,5 @@ public class StoreDAO extends DBConnection implements IStoreDAO {
         }
         return stores;
     }
+
 }

@@ -1,3 +1,4 @@
+
 package com.mdk.dao;
 
 import com.mdk.models.User;
@@ -10,4 +11,5 @@ public interface IUserDAO {
     List<User_1000> find1000UsersLatestCreationTime();
     int totalUsers();
     List<User> topUsers();
+
 }

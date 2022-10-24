@@ -1,3 +1,4 @@
+
 package com.mdk.dao.impl;
 
 import com.mdk.connection.DBConnection;
@@ -58,4 +59,5 @@ public class ProductDAO extends DBConnection implements IProductDAO {
         }
         return products;
     }
+
 }

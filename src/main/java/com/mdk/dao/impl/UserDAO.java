@@ -1,3 +1,4 @@
+
 package com.mdk.dao.impl;
 
 import com.mdk.connection.DBConnection;
@@ -97,4 +98,5 @@ public class UserDAO extends DBConnection implements IUserDAO {
         }
         return users;
     }
+
 }
