@@ -1,11 +1,10 @@
-package com.mdk.dao;
+package com.mdk.services;
 
 import com.mdk.models.Product;
 
 import java.util.List;
 
-public interface IProductDAO {
+public interface IProductService {
     List<Product> findAllProductProhibited();
     List<Product> findAllProductPermited();
-
 }

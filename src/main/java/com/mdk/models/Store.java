@@ -13,7 +13,7 @@ public class Store extends AbstractModel<Delivery> {
 	private String cover;
 	private int commission;
 	private int point;
-	private int raitng;
+	private int rating;
 	private BigDecimal e_wallet;
 	
 	public String getName() {
@@ -96,12 +96,12 @@ public class Store extends AbstractModel<Delivery> {
 		this.point = point;
 	}
 	
-	public int getRaitng() {
-		return raitng;
+	public int getRating() {
+		return rating;
 	}
 	
-	public void setRaitng(int raitng) {
-		this.raitng = raitng;
+	public void setRating(int raitng) {
+		this.rating = raitng;
 	}
 	
 	public BigDecimal getE_wallet() {
