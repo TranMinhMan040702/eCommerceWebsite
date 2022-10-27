@@ -1,2 +1,4 @@
-package com.mdk.service;public interface IStyleService {
+package com.mdk.service;
+
+public interface IStyleService {
 }

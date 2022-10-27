@@ -1,5 +1,5 @@
 package com.mdk.dao;
 
-public interface IOderDAO {
+public interface IOrderDAO {
     int totalOder();
 }

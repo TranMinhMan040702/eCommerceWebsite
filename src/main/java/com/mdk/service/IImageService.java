@@ -1,2 +1,7 @@
-package com.mdk.service;public interface IImageService {
+package com.mdk.service;
+
+import com.mdk.models.Image;
+
+public interface IImageService {
+    void insert(Image image);
 }

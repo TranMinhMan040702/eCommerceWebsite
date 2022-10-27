@@ -1,6 +1,7 @@
 package com.mdk.models;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class Store extends AbstractModel<Delivery> {
 	private String name;
@@ -11,11 +12,28 @@ public class Store extends AbstractModel<Delivery> {
 	private boolean isOpen;
 	private String avatar;
 	private String cover;
-	private int commission;
+	private List<String> featuredImages;
+	private Long commissionId;
 	private int point;
-	private int raitng;
+	private int rating;
 	private BigDecimal e_wallet;
-	
+
+	public List<String> getFeaturedImages() {
+		return featuredImages;
+	}
+
+	public void setFeaturedImages(List<String> featuredImages) {
+		this.featuredImages = featuredImages;
+	}
+
+	public Long getCommissionId() {
+		return commissionId;
+	}
+
+	public void setCommissionId(Long commissionId) {
+		this.commissionId = commissionId;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -80,14 +98,6 @@ public class Store extends AbstractModel<Delivery> {
 		this.cover = cover;
 	}
 	
-	public int getCommission() {
-		return commission;
-	}
-	
-	public void setCommission(int commission) {
-		this.commission = commission;
-	}
-	
 	public int getPoint() {
 		return point;
 	}
@@ -96,12 +106,12 @@ public class Store extends AbstractModel<Delivery> {
 		this.point = point;
 	}
 	
-	public int getRaitng() {
-		return raitng;
+	public int getRating() {
+		return rating;
 	}
 	
-	public void setRaitng(int raitng) {
-		this.raitng = raitng;
+	public void setRating(int rating) {
+		this.rating = rating;
 	}
 	
 	public BigDecimal getE_wallet() {
