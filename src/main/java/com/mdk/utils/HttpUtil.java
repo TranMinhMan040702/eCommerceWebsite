@@ -23,6 +23,7 @@ public class HttpUtil {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.print(e.getMessage());
         }
         return null;
     }

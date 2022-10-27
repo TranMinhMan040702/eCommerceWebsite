@@ -2,7 +2,6 @@ package com.mdk.models;
 
 public class Image extends AbstractModel<Image>{
     private String url;
-
     public String getUrl() {
         return url;
     }

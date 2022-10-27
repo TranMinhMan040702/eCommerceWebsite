@@ -1,6 +1,6 @@
 package com.mdk.models;
 
-public class StyleValueModel extends AbstractModel<StyleValueModel>{
+public class StyleValue extends AbstractModel<StyleValue>{
     private String name;
     private Long styleId;
     private Boolean isDeleted;
