@@ -1,22 +1,22 @@
 package com.mdk.models;
 
 public class UserAddress {
-	private long addressId;
-	private long userId;
+	private int addressId;
+	private int userId;
 	
-	public long getAddressId() {
+	public int getAddressId() {
 		return addressId;
 	}
 	
-	public void setAddressId(long addressId) {
+	public void setAddressId(int addressId) {
 		this.addressId = addressId;
 	}
 	
-	public long getUserId() {
+	public int getUserId() {
 		return userId;
 	}
 	
-	public void setUserId(long userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 

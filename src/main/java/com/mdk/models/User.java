@@ -7,19 +7,15 @@ enum UserRole {}
 public class User extends AbstractModel<Delivery> {
 	private String firstname;
 	private String lastname;
-	private String slug;
-	private long id_card;
+	private String id_card;
 	private String email;
 	private String phone;
 	private boolean IsEmailActive;
 	private boolean isPhoneActive;
-	private String salt;
-	private String hashed_password;
+	private String password;
 	private UserRole role;
 	private String avatar;
-	private String cover;
-	private int point;
-	private BigDecimal e_wallet;
+	private Double eWallet;
 	
 	public String getFirstname() {
 		return firstname;
@@ -37,19 +33,12 @@ public class User extends AbstractModel<Delivery> {
 		this.lastname = lastname;
 	}
 	
-	public String getSlug() {
-		return slug;
-	}
 	
-	public void setSlug(String slug) {
-		this.slug = slug;
-	}
-	
-	public long getId_card() {
+	public String getId_card() {
 		return id_card;
 	}
 	
-	public void setId_card(long id_card) {
+	public void setId_card(String id_card) {
 		this.id_card = id_card;
 	}
 	
@@ -85,22 +74,6 @@ public class User extends AbstractModel<Delivery> {
 		this.isPhoneActive = isPhoneActive;
 	}
 	
-	public String getSalt() {
-		return salt;
-	}
-	
-	public void setSalt(String salt) {
-		this.salt = salt;
-	}
-	
-	public String getHashed_password() {
-		return hashed_password;
-	}
-	
-	public void setHashed_password(String hashed_password) {
-		this.hashed_password = hashed_password;
-	}
-	
 	public UserRole getRole() {
 		return role;
 	}
@@ -116,28 +89,21 @@ public class User extends AbstractModel<Delivery> {
 	public void setAvatar(String avatar) {
 		this.avatar = avatar;
 	}
-	
-	public String getCover() {
-		return cover;
+
+	public String getPassword() {
+		return password;
 	}
-	
-	public void setCover(String cover) {
-		this.cover = cover;
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	
-	public int getPoint() {
-		return point;
+
+	public Double geteWallet() {
+		return eWallet;
 	}
-	
-	public void setPoint(int point) {
-		this.point = point;
+
+	public void seteWallet(Double eWallet) {
+		this.eWallet = eWallet;
 	}
-	
-	public BigDecimal getE_wallet() {
-		return e_wallet;
-	}
-	
-	public void setE_wallet(BigDecimal e_wallet) {
-		this.e_wallet = e_wallet;
-	}
+
 }
